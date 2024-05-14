@@ -3,4 +3,5 @@ url = localhost
 access_token = ctfd_0d0447aa2069d9d5d781f9b314a92d1cae5ce3a8920c9e7c847febc6e24c98f8
 
 [challenges]
+ctf-challenges = https://github.com/csivitu/ctf-challenges.git
 
