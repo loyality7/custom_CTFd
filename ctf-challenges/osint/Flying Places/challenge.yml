@@ -1,29 +1,20 @@
-name: "Flying Places"
+name: Flying Places
 author: :"Parth"
-category: "OSINT"
+category: OSINT
+description: 'A reporter wanted to know where this flight is headed. Where does he
+  (the reporter) live?
 
-description: | 
-  A reporter wanted to know where this flight is headed. Where does he (the reporter) live?
-
+  '
 value: 500
 type: dynamic
-
-
 decay: 450
-
-
 minimum: 100
-
 flags:
-  - csictf{san_francisco}
-
+- csictf{san_francisco}
 tags:
-  - "osint"
-  - "research"
-
+- osint
+- research
 files:
-  - "osint/Flying Places/Flight.jpg"
-
-state: hidden
-
-version: "0.1"
+- osint/Flying Places/Flight.jpg
+state: visible
+version: '0.1'

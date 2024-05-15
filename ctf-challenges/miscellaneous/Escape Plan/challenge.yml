@@ -1,36 +1,30 @@
-name: "Escape Plan"
-author: "alias-rahil"
+name: Escape Plan
+author: alias-rahil
 category: Miscellaneous
+description: 'I found a script that solves ciphers, they say it''s pretty secure!
 
-description: |
-  I found a script that solves ciphers, they say it's pretty secure!
 
   nc chall.csivit.com 30419
 
+  '
 value: 500
 type: dynamic
-
 decay: 450
 minimum: 100
-
 flags:
- - csictf{2077m4y32_h45_35c4p3d}
-
+- csictf{2077m4y32_h45_35c4p3d}
 tags:
- - python
- - miscellaneous
- - jail
-
-state: hidden
-version: "0.1"
-
+- python
+- miscellaneous
+- jail
+state: visible
+version: '0.1'
 replicas: 2
 containers:
   server:
     build: .
     ports:
-      - containerPort: 9999
-
+    - containerPort: 9999
 expose:
 - containerPort: 9999
   nodePort: 30419

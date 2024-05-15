@@ -1,33 +1,18 @@
-name: "Mein Kampf"
-author: "AJ147"
+name: Mein Kampf
+author: AJ147
 category: Crypto
-
-description: |
-  "We have intercepted the enemy's communications, but unfortunately, some data was corrupted during transmission. Can you recover the message?"
-  M4 
-  UKW $
-  Gamma 2 4 
-  $ 5 9 
-  $ 14 3 
-  $ 5 20 
-  fv cd hu ik es op yl wq jm
-
-  "Ciphertext: zkrtwvvvnrkulxhoywoj"
-  (Words in the flag are separated by underscores)
-
+description: "\"We have intercepted the enemy's communications, but unfortunately,\
+  \ some data was corrupted during transmission. Can you recover the message?\"\n\
+  M4 \nUKW $\nGamma 2 4 \n$ 5 9 \n$ 14 3 \n$ 5 20 \nfv cd hu ik es op yl wq jm\n\n\
+  \"Ciphertext: zkrtwvvvnrkulxhoywoj\"\n(Words in the flag are separated by underscores)\n"
 value: 500
 type: dynamic
-
 decay: 450
 minimum: 100
-
 flags:
-  - csictf{no_shit_sherlock}
-
+- csictf{no_shit_sherlock}
 tags:
-  - crypto
-
-files:
-
-state: hidden
-version: "0.1"
+- crypto
+files: null
+state: visible
+version: '0.1'

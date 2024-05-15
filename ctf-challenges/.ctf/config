@@ -3,4 +3,13 @@ url = http://localhost:8000
 access_token = ctfd_ba95d4f2b2abb6bd934011de29d8f17d6b88b85e4141f58aaa587fd86c09a55d
 
 [challenges]
+/home/babu/Desktop/CTFd/ctf-challenges/web/Oreo/ = /home/babu/Desktop/CTFd/ctf-challenges/web/Oreo/
+/home/babu/Desktop/CTFd/ctf-challenges/web/Body Count = /home/babu/Desktop/CTFd/ctf-challenges/web/Body Count
+/home/babu/Desktop/CTFd/ctf-challenges/web/CCC/ = /home/babu/Desktop/CTFd/ctf-challenges/web/CCC/
+/home/babu/Desktop/CTFd/ctf-challenges/web/Secure Portal/ = /home/babu/Desktop/CTFd/ctf-challenges/web/Secure Portal/
+/home/babu/Desktop/CTFd/ctf-challenges/web/Cascade/ = /home/babu/Desktop/CTFd/ctf-challenges/web/Cascade/
+/home/babu/Desktop/CTFd/ctf-challenges/web/Body Count/ = /home/babu/Desktop/CTFd/ctf-challenges/web/Body Count/
+/home/babu/Desktop/CTFd/ctf-challenges/web/Warm Up/ = /home/babu/Desktop/CTFd/ctf-challenges/web/Warm Up/
+/home/babu/Desktop/CTFd/ctf-challenges/web/The Confused Deputy/ = /home/babu/Desktop/CTFd/ctf-challenges/web/The Confused Deputy/
+/home/babu/Desktop/CTFd/ctf-challenges/web/The Usual Suspects/ = /home/babu/Desktop/CTFd/ctf-challenges/web/The Usual Suspects/
 

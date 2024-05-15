@@ -1,25 +1,19 @@
-name: "Esrever"
-author: "roerohan"
+name: Esrever
+author: roerohan
 category: Reversing
-
-description: I encrypted my flag so that nobody can see it, but now I realize I don't know how to decrypt it. Can you help me?
-
+description: I encrypted my flag so that nobody can see it, but now I realize I don't
+  know how to decrypt it. Can you help me?
 value: 500
 type: dynamic
-
 decay: 450
 minimum: 100
-
 flags:
-  - csictf{esreverisjustreverseinreverseright}
-
+- csictf{esreverisjustreverseinreverseright}
 tags:
-  - crypto
-  - reversing
-
+- crypto
+- reversing
 files:
-  - "reversing/Esrever/esrever.py"
-  - "reversing/Esrever/esrever.txt"
-
-state: hidden
-version: "0.1"
+- reversing/Esrever/esrever.py
+- reversing/Esrever/esrever.txt
+state: visible
+version: '0.1'

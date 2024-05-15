@@ -1,24 +1,18 @@
-name: "The Climb"
-author: "ashikka and AJ1479"
+name: The Climb
+author: ashikka and AJ1479
 category: Crypto
-
-description: We are not lost, we're right here somewhere on this little blue line. Wait, why do I feel like I'm being watched?
-
+description: We are not lost, we're right here somewhere on this little blue line.
+  Wait, why do I feel like I'm being watched?
 value: 500
 type: dynamic
-
 decay: 450
 minimum: 100
-
 flags:
-  - csictf{hillshaveeyes}
-
+- csictf{hillshaveeyes}
 tags:
-  - crypto
-
+- crypto
 files:
-  - "crypto/The Climb/theclimb.txt"
-  - "crypto/The Climb/theclimb.java"
-
-state: hidden
-version: "0.1"
+- crypto/The Climb/theclimb.txt
+- crypto/The Climb/theclimb.java
+state: visible
+version: '0.1'

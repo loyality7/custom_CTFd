@@ -1,26 +1,18 @@
-name: "Scrambled Eggs"
-author: "AJ1479"
+name: Scrambled Eggs
+author: AJ1479
 category: Reversing
-
-description: |
-  I like my eggs sunny side up, but I ended up scrambling them. 
-
+description: "I like my eggs sunny side up, but I ended up scrambling them. \n"
 value: 500
 type: dynamic
-
 decay: 450
 minimum: 100
-
 flags:
-  - csictf{all_the_kings_horses}
-
+- csictf{all_the_kings_horses}
 tags:
-  - crypto
-  - reversing
-
+- crypto
+- reversing
 files:
-  - "reversing/Scrambled Eggs/scrambledeggs.py"
-  - "reversing/Scrambled Eggs/scrambledeggs.txt"
-
-state: hidden
-version: "0.1"
+- reversing/Scrambled Eggs/scrambledeggs.py
+- reversing/Scrambled Eggs/scrambledeggs.txt
+state: visible
+version: '0.1'
