@@ -1,0 +1,126 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="jumbotron">
+  <div class="container">
+    <h1>Challenges</h1>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">{% include "components/errors.html" %}</div>
+  </div>
+
+  <div
+    x-data="ChallengeBoard"
+    @load-challenges.window="loadChallenges()"
+    @load-challenge.window="loadChallenge($event.detail)"
+  >
+    <div
+      x-ref="challengeWindow"
+      id="challenge-window"
+      class="modal fade"
+      tabindex="-1"
+      role="dialog"
+      x-data=""
+      x-html="$store.challenge.data.view"
+    ></div>
+
+    <div x-show="!loaded">
+      <div class="min-vh-50 d-flex align-items-center">
+        <div class="text-center w-100">
+          <i class="fas fa-circle-notch fa-spin fa-3x fa-fw spinner"></i>
+        </div>
+      </div>
+    </div>
+
+    <div x-show="loaded">
+      <div class="challenge-grid">
+        <template x-for="(category, idx) in getCategories()" :key="idx">
+          <div class="challenge-card">
+            <div
+              class="challenge-card-header"
+              x-data="{ difficulty: getChallengeDifficulty(category) }"
+            >
+              <!-- Points badge -->
+              <span
+                class="badge challenge-points-header"
+                x-text="getTotalChallengePoints(category)"
+              ></span>
+
+              <!-- Challenge title -->
+              <div class="challenge-title" x-text="category"></div>
+
+              <!-- Difficulty badge -->
+              <template x-if="difficulty">
+                <div class="badge challenge-difficulty">
+                  <svg
+                    :class="'challenge-difficulty-indicator ' + (difficulty ? 'challenge-difficulty-indicator-' + difficulty : '')"
+                    viewBox="0 0 6 6"
+                    aria-hidden="true"
+                  >
+                    <circle cx="3" cy="3" r="3" />
+                  </svg>
+                  <span class="challenge-difficulty-text" x-text="difficulty"></span>
+                </div>
+              </template>
+            </div>
+
+            <ul role="list" class="task-list divide-y">
+              <template x-for="(c, idx) in getChallenges(category)" :key="c.id">
+                <li class="task-row" @click="loadChallenge(c.id)">
+                  <template x-if="c.solved_by_me">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      :class="c.solved_by_me ? 'task-row-solved' : ''"
+                    >
+                      <path
+                        fill-rule="evenodd"
+                        d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z"
+                        clip-rule="evenodd"
+                      />
+                    </svg>
+                  </template>
+                  <template x-if="!c.solved_by_me">
+                    <svg
+                      class="task-row-not-solved"
+                      viewBox="0 0 6 6"
+                      aria-hidden="true"
+                    >
+                      <circle cx="3" cy="3" r="2.5" />
+                    </svg>
+                  </template>
+                  <span class="badge challenge-points-task" x-text="c.value"></span>
+                  <div class="task-title" x-text="c.name"></div>
+                  <div class="task-tags">
+                    <template x-for="(tag) in c.tags">
+                      <span class="badge" :key="tag.id" x-text="tag.value"></span>
+                    </template>
+                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="task-arrow"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
+                </li>
+              </template>
+            </ul>
+          </div>
+        </template>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %} {% block scripts %} {{ Assets.js("assets/js/challenges.js") }} {%
+endblock %}

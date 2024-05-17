@@ -1,0 +1,12 @@
+[config]
+url = http://localhost:8000
+access_token = ctfd_a8c21f0eb8e0d40db37b43cd889040a5fa8712c143593e600e9639072e30a733
+
+[challenges]
+/home/babu/Desktop/CTFd/CTFd/challenges/web/0day-blog/ = /home/babu/Desktop/CTFd/CTFd/challenges/web/0day-blog/
+/home/babu/Desktop/CTFd/CTFd/ch = /home/babu/Desktop/CTFd/CTFd/ch
+/home/babu/Desktop/CTFd/CTFd/challenges/beginner/x = /home/babu/Desktop/CTFd/CTFd/challenges/beginner/x
+/home/babu/Desktop/CTFd/CTFd/challenges/beginner/xxd-server/ = /home/babu/Desktop/CTFd/CTFd/challenges/beginner/xxd-server/
+/home/babu/Desktop/CTFd/ctfcli-testchallenges/1_html_code/ = /home/babu/Desktop/CTFd/ctfcli-testchallenges/1_html_code/
+/home/babu/Desktop/CTFd/ctfcli-testchallenges/programming = /home/babu/Desktop/CTFd/ctfcli-testchallenges/programming
+
